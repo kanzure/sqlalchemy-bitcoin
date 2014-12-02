@@ -9,7 +9,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.md')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.md')).read()
 requires = open(os.path.join(here, 'requirements.txt')).read().split()
-packages = find_packages()
+packages = find_packages(exclude="xunit")
 
 version = '0.0.3pre-alpha'
 setup(**{
